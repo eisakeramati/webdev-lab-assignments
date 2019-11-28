@@ -1,0 +1,35 @@
+#!/usr/bin/perl
+use CGI ':standard';
+print "Content-type: text/html\n\n";
+@name_real = param ('name');
+@name = param ('transp');
+@city = param('City');
+@mess = param('message');
+print "<html>";
+print "<head>";
+print "<style>";
+print "#div1{
+  border-radius: 5px;
+  border-style: solid;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  background-color: #F0E68CCC;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('form.png');
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size:contain;
+}";
+print "</style>";
+print "</head>";
+print "<body>";
+print "<div id = 'div1'>";
+print "<p>Hello @name_real!</p>";
+print "<p>You live in @city.</p>";
+print "<p>You prefer @name.</p>";
+print "<p>Your message: @mess</p>";
+print "</div>";
+print "</body>";
+print "</html>";

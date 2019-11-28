@@ -1,0 +1,62 @@
+
+<HTML>
+	<head>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+		<style>
+			#div1{
+	      border-radius: 5px;
+	      border-style: solid;
+	      font-family: 'Source Sans Pro', sans-serif;
+	      text-align: center;
+	      background-color: #F0E68CCC;
+				width: 700px;
+				margin-left: auto;
+	      margin-right: auto;
+				background-image: url('form.png');
+				background-repeat:no-repeat;
+				background-position: center;
+				background-size:contain;
+	    }
+			#div2{
+	      border-radius: 5px;
+	      border-style: solid;
+	      font-family: 'Source Sans Pro', sans-serif;
+	      text-align: center;
+	      background-color: #E8E8E8;
+	    }
+		</style>
+	</head>
+	<BODY BGCOLOR="#FFFFFF">
+	<div id="div1">
+	<H1>Please fill out this form:</H1>
+  <form action="cgi-bin/form_result.cgi" method ="post">
+  Name: <input type="text" name="name"
+  style="width:300px;"> <br><br>
+  What's your preferred Form of transportation?<br />
+  Bike: <input type="checkbox"
+  name="transp" value="Bike">
+  Car: <input type="checkbox"
+  name="transp" value="Car">
+  Foot: <input type="checkbox"
+  name="transp" value="Foot">
+  Subway: <input type="checkbox"
+  name="transp" value="Subway"><br><br>
+  What city are you living in?
+	<br>
+  <select name="City">
+    <option value="Toronto">Toronto</option>
+    <option value="Richmonhill">Richmonhill</option>
+    <option value="Brampton">Brampton</option>
+    <option value="Mississauga">Mississauga</option>
+    <option value="Kitchener">Kitchener</option>
+		<option value="Kitchener">Scarborough</option>
+  </select>
+  <br><br>
+	write any messages you have.
+	<textarea name="message" rows="10" cols="30">messages go here.</textarea>
+ <br><br>
+  <input type="submit">
+  </form>
+</div>
+</BODY>
+</HTML>
